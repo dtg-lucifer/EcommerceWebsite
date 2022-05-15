@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+ul li {
+    align-self: center;
+    justify-self: center;
+}
+ul li a {
+    /* color: #fff; */
+    font-size: 14px;
+    text-decoration: none;
+}
+.top-bg {
+    background-color: #f8880f;
+}
+/* header div:first-child > div:first-child {
+    background-color: #f8880f;
+} */
+header {
+    font-family: "Kanit", sans-serif;
+}
+body {
+    font-weight: 400;
+    font-style: normal;
+}
+.header-info-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 10px;
+}
+.header-info-left > form > select {
+    background-color: transparent;
+    font-size: 14px;
+    outline: none;
+}
+.header-info-left > form > select > option {
+    background-color: cornflowerblue;
+}
+.header-info-left > * {
+    padding: 0px 10px;
+}
+.header-info-left > ul > li > a {
+    color: white;
+}
+.screen-span {
+    min-width: 100vw;
+}
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.header-info-right {
+    margin-right: 80px;
+}
+.header-info-right > ul > li > a {
+    color: white;
+}
+.header-bottom-ul > li > button {
+    padding: 15px 20px;
+    border-radius: 35px;
+    border: none;
+    color: black;
+    font-size: 14px;
+    background-color: #f8880f;
+    outline: none;
+    box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.355);
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.header-bottom-ul > li > i {
+    padding: 15px;
+    border-radius: 100%;
+    border: 1px solid grey;
+    box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.355);
+    cursor: pointer;
+}
+.header-ul > li {
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+}
+.header-ul > li > a{
+    transition: all 150ms ease-in-out;
+}
+
+.header-ul > li > a:hover {
+    border-bottom: 4px solid white;
+    
+}
+.f-right {
+    float: right;
+}
+.sub-menu {
+    display: none;
+}
+.header-bottom-ul > li {
+    font-size: 16px;
+    color: black;
+    padding: 39px 18px;
+}
+.header-bottom-ul > li > a {
+    color: black;
+}
+.header-bottom-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 75px;
+    overflow: hidden;
+}
+#bottom-header-btn:hover {
+    color: white !important;
+    background-color: #f8700f;
+}
