@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
-
 ul {
     list-style: none;
     margin: 0;
@@ -17,14 +15,14 @@ ul li a {
     text-decoration: none;
 }
 .top-bg {
+    position: relative;
+    z-index: 1;
+    box-shadow: -1px 7px 19px -5px rgba(0,0,0,0.83);
     background-color: #f8880f;
 }
 /* header div:first-child > div:first-child {
     background-color: #f8880f;
 } */
-header {
-    font-family: "Kanit", sans-serif;
-}
 body {
     font-weight: 400;
     font-style: normal;
@@ -49,8 +47,13 @@ body {
 .header-info-left > ul > li > a {
     color: white;
 }
+#top-header-left-phone-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .screen-span {
-    min-width: 100vw;
+    min-width: screen;
 }
 .header-container {
     display: flex;
@@ -66,7 +69,7 @@ body {
     color: white;
 }
 .header-bottom-ul > li > button {
-    padding: 15px 20px;
+    padding: 23px 20px;
     border-radius: 35px;
     border: none;
     color: black;
@@ -81,9 +84,15 @@ body {
 .header-bottom-ul > li > i {
     padding: 15px;
     border-radius: 100%;
-    border: 1px solid grey;
+    border: 1px solid rgb(205, 196, 196);
     box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.355);
     cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+.header-bottom-ul > li > i:hover{
+    background-color: #f8880f;
+    color: white;
+    border: 1px solid transparent;
 }
 .header-ul > li {
     align-items: center;
@@ -91,12 +100,13 @@ body {
     padding: 0px 15px;
 }
 .header-ul > li > a{
+    padding: 5px;
+    font-weight: 400;
     transition: all 150ms ease-in-out;
 }
 
 .header-ul > li > a:hover {
-    border-bottom: 4px solid white;
-    
+    border-bottom: 4px solid white;  
 }
 .f-right {
     float: right;
@@ -120,7 +130,32 @@ body {
     max-height: 75px;
     overflow: hidden;
 }
+header-bottom-container > img {
+    position: absolute;
+    z-index: -1;
+    margin: 0px 0px 5px 15px;
+}
 #bottom-header-btn:hover {
-    color: white !important;
     background-color: #f8700f;
+}
+.main-menu > nav > ul > li > a:hover {
+    color: #f8880f;
+    border-bottom: 4px solid black;
+}
+.main-menu > nav > ul > li > a {
+    padding: 8px;
+    transition: all 100ms ease-in-out;
+    font-weight: 400;
+
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .header-bottom .main-menu ul li a {
+        padding: 39px 15px
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .header-bottom .main-menu ul li a {
+        padding: 39px 13px
+    }
 }
