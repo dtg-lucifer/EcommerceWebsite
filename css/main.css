@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 .jumbotron-container {
     display: flex;
     flex-direction: row;
@@ -40,11 +43,75 @@
     position: relative;
     z-index: 6;
     right: -18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 .jumbotron-right > span {
     font-size: 14px;
 }
 .jumbotron-right > h1 { 
-    font-size: 60px;
+    font-size: 70px;
     letter-spacing: 3px;
+}
+.herocaption span {
+    font-family: 'Kaushan Script', cursive;
+    color: #2577fd;
+    font-size: 35px;
+    display: inline-block;
+    transition: all 100ms ease-in-out;
+    padding: 5px 5px 5px 0px;
+}
+.herocaption span:hover {
+    /* border-bottom: 4px solid #2577fd; */
+    text-decoration: underline;
+    cursor: pointer;
+}
+.herocaption h1 {
+    font-family: 'Playfair Display', serif;
+}
+.herocaption p {
+    font-weight: 300;
+}
+.jumbotron-btn {
+    padding: 23px 20px;
+    border-radius: 35px;
+    border: none;
+    color: black;
+    font-size: 14px;
+    background-color: #f8880f;
+    outline: none;
+    box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.355);
+    font-family: "Kanit", sans-serif;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.shop-by-cat {
+    padding: 90px 90px 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+#shop-by-cat-heading {
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.shop-by-cat img {
+    object-fit: cover;
+    height: 130px;
+    width: 300px;
+}
+#cat-container-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#cat-container-each{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 130px;
 }
