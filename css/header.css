@@ -1,3 +1,9 @@
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
 ul {
     list-style: none;
     margin: 0;
@@ -104,7 +110,12 @@ body {
     font-weight: 400;
     transition: all 150ms ease-in-out;
 }
-
+.header-bottom-container {
+    background-color: white;
+    position: inherit;
+    z-index: 9;
+    box-shadow: -1px 0px 18px 2px rgba(71, 69, 69, 0.289);
+}
 .header-ul > li > a:hover {
     border-bottom: 4px solid white;  
 }
