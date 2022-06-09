@@ -1,0 +1,166 @@
+.active {
+  background-color: #f8880f;
+}
+.active:hover {
+  background-color: #f8880f !important;
+}
+
+#product__section {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: ceneter;
+  justify-content: space-between;
+}
+#product__section .product__section__top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  min-height: 7rem;
+  padding: 2rem;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+#product__section .product__section__top #product__header {
+  font-size: 3rem;
+  position: relative;
+}
+#product__section .product__section__top #product__header:hover::after {
+  transform: scaleX(1);
+}
+#product__section .product__section__top #product__header::after {
+  content: "";
+  position: absolute;
+  left: -25%;
+  bottom: 0;
+  height: 0.25rem;
+  width: 150%;
+  background-color: #030303;
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+#product__section .product__section__top nav.product__nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30rem;
+  background-color: #fff;
+  border: 2px solid #f8880f;
+}
+#product__section .product__section__top nav.product__nav a {
+  text-decoration: none;
+  color: #030303;
+  font-size: 1.4rem;
+  height: 3rem;
+  width: 100%;
+  padding-top: 0.7rem;
+  text-align: center;
+  outline: 1px solid #f8880f;
+  transition: background-color 0.2s;
+}
+#product__section .product__section__top nav.product__nav a:hover {
+  background-color: #ffce25;
+}
+#product__section .prod__container__each {
+  padding: 5rem;
+}
+#product__section .prod__container__each .products {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 330px;
+  transition: height 0.25s;
+  overflow: hidden;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+#product__section .prod__container__each .products ul {
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.25s;
+  transition-delay: 0.4s;
+}
+#product__section .prod__container__each .products ul > li:nth-child(2) {
+  text-decoration: line-through !important;
+  color: rgba(0, 0, 0, 0.45);
+}
+#product__section .prod__container__each .products img {
+  border-radius: 1rem;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+  height: 329px;
+  width: 246.75px;
+}
+#product__section .prod__container__each .products span {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  transition: 0.25s;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+#product__section .prod__container__each .products div.prod__star__container > i {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.25s;
+  transition-delay: 0.1s;
+  color: #303030;
+}
+#product__section .prod__container__each .products h4 {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 0.25s;
+  transition-delay: 0.3s;
+}
+#product__section .prod__container__each .products h4 > a {
+  text-decoration: none;
+  color: #030303;
+  font-size: 1.5rem;
+}
+#product__section .prod__container__each .products:hover {
+  height: 400px;
+}
+#product__section .prod__container__each .products:hover span {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+#product__section .prod__container__each .products:hover ul {
+  opacity: 1;
+  transform: translate(0);
+}
+#product__section .prod__container__each .products:hover h4 {
+  opacity: 1;
+  transform: translateY(0);
+}
+#product__section .prod__container__each .products:hover div.prod__star__container > i {
+  opacity: 1;
+  transform: translateY(0);
+}
+#product__section .prod__container__each .products:hover img {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+#product__section #nav-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+#product__section #nav-profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+}

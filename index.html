@@ -5,11 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>EcommerceWebsite</title>
-        <link rel="shortcut icon" href="images/flavicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/flavicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/utility.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/letestProducts.css">
         <script src="https://kit.fontawesome.com/bf33c26d23.js" crossorigin="anonymous"></script>
     </head>
 
@@ -108,44 +109,69 @@
             </div>
 
             <!-- shop by category -->
-            <section class="shop-by-cat section-padding30">
-                <h2 id="shop-by-cat-heading">Shop by category</h2>
-                <div id="cat-container-main">
+            <section class="shop-by-cat">
+                <h2 class="shop-by-cat-itm" id="shop-by-cat-heading">Shop by category</h2>
+                <div class="shop-by-cat-itm" id="cat-container-main">
                     <div class="cat-container-each">
                         <img src="images/cat1.jpg" alt="cat1">
-                        <h2 id="cat-headings-1" class="cat-heading">Women's</h2>
-                        <div id="cat-links1" class="cat-links">Best new deals</div>
+                        <div class="cat-text">
+                            <h2 id="cat-headings-1" class="cat-heading">Women's</h2>
+                            <div id="cat-links1" class="cat-links">Best new deals</div>
+                        </div>
                     </div>
                     <div class="cat-container-each">
                         <img src="images/cat2.jpg" alt="cat2">
-                        <h2 id="cat-headings-1" class="cat-heading">Ethnic wear</h2>
-                        <div id="cat-links-1" class="cat-links">Best new deals</div>
+                        <div class="cat-text">
+                            <h2 id="cat-headings-1" class="cat-heading">Ethnic wear</h2>
+                            <div id="cat-links-1" class="cat-links">Best new deals</div>
+                        </div>
                     </div>
                     <div class="cat-container-each">
                         <img src="images/cat3.jpg" alt="cat3">
-                        <h2 id="cat-headings-1" class="cat-heading">Men's</h2>
-                        <div id="cat-links-1" class="cat-links">Best new deals</div>
+                        <div class="cat-text">
+                            <h2 id="cat-headings-1" class="cat-heading">Men's</h2>
+                            <div id="cat-links-1" class="cat-links">Best new deals</div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <h2>Latest Products</h2>
-                <nav>
-                    <a href="#nav-home">All</a>
-                    <a href="#nav-profile">New</a>
-                    <a href="#nav-contact">Featured</a>
-                    <a href="#nav-last">Offer</a>
-                </nav>
+            <section id="product__section">
+                <div class="product__section__top">
+                    <h2 id="product__header">Latest Products</h2>
+                    <nav class="product__nav">
+                        <a class="product__nav__item active" href="#nav-home">All</a>
+                        <a class="product__nav__item" href="#nav-profile">New</a>
+                        <a class="product__nav__item" href="#nav-contact">Featured</a>
+                        <a class="product__nav__item" href="#nav-last">Offer</a>
+                    </nav>
+                </div>
                 <!-- first navigation part -->
-                <div id="nav-home">
+                <div class="prod__container__each" id="nav-home">
                     <div class="products">
                         <img src="images/product1.png" alt="product1">
                         <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h4><a href="#">Green dress with details</a></h4>
+                        <ul>
+                            <li>$40.00</li>
+                            <li>$60.00</li>
+                        </ul>
+                    </div>
+                    <div class="products">
+                        <img src="images/product3.png" alt="product1">
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <h4><a href="#">Green dress with details</a></h4>
                         <ul>
                             <li>$40.00</li>
@@ -155,25 +181,13 @@
                     <div class="products">
                         <img src="images/product2.png" alt="product1">
                         <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
-                    <div class="products">
-                        <img src="images/product3.png" alt="product1">
-                        <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <h4><a href="#">Green dress with details</a></h4>
                         <ul>
                             <li>$40.00</li>
@@ -183,11 +197,13 @@
                     <div class="products">
                         <img src="images/product4.png" alt="product1">
                         <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <h4><a href="#">Green dress with details</a></h4>
                         <ul>
                             <li>$40.00</li>
@@ -196,12 +212,13 @@
                     </div>
                     <div class="products">
                         <img src="images/product5.png" alt="product1">
-                        <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <h4><a href="#">Green dress with details</a></h4>
                         <ul>
                             <li>$40.00</li>
@@ -210,12 +227,13 @@
                     </div>
                     <div class="products">
                         <img src="images/product6.png" alt="product1">
-                        <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <h4><a href="#">Green dress with details</a></h4>
                         <ul>
                             <li>$40.00</li>
@@ -224,15 +242,16 @@
                     </div>
                 </div>
                 <!-- this is the second nav part -->
-                <div id="nav-profile">
+                <div class="prod__container__each" id="nav-profile">
                     <div class="products">
                         <img src="images/product1.png" alt="product1">
-                        <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <h4><a href="#">Green dress with details</a></h4>
                         <ul>
                             <li>$40.00</li>
@@ -242,25 +261,13 @@
                     <div class="products">
                         <img src="images/product2.png" alt="product1">
                         <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
-                    <div class="products">
-                        <img src="images/product3.png" alt="product1">
-                        <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <h4><a href="#">Green dress with details</a></h4>
                         <ul>
                             <li>$40.00</li>
@@ -269,12 +276,13 @@
                     </div>
                     <div class="products">
                         <img src="images/product4.png" alt="product1">
-                        <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <h4><a href="#">Green dress with details</a></h4>
                         <ul>
                             <li>$40.00</li>
@@ -282,13 +290,14 @@
                         </ul>
                     </div>
                     <div class="products">
-                        <img src="images/product5.png" alt="product1">
-                        <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <img src="images/product3.png" alt="product1">
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <h4><a href="#">Green dress with details</a></h4>
                         <ul>
                             <li>$40.00</li>
@@ -298,11 +307,13 @@
                     <div class="products">
                         <img src="images/product6.png" alt="product1">
                         <span>New</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <div class="prod__star__container">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <h4><a href="#">Green dress with details</a></h4>
                         <ul>
                             <li>$40.00</li>
@@ -340,4 +351,5 @@
             <a href="#"><i class="fa-solid fa-globe"></i></a>
         </footer>
     </body>
+    <script src="js/index.js"></script>
 </html>
