@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "watchScss": "sass --no-source-map --watch scss:css"
   },
   "devDependencies": {
     "vite": "^2.9.9"

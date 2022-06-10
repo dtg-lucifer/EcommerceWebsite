@@ -1,355 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EcommerceWebsite</title>
-        <link rel="shortcut icon" href="images/flavicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/utility.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/letestProducts.css">
-        <script src="https://kit.fontawesome.com/bf33c26d23.js" crossorigin="anonymous"></script>
-    </head>
 
-    <body>
-        <!-- top section -->
-        <header class="navbar">
-            <div class="header-top top-bg" id="navbar">
-                <div class="screen-span">
-                    <div class="header-container">
-                        <div class="header-info-left">
-                            <img src="images/shopping_cart.png" alt="flag" height="40px" width="45px" id="flag">
-                            <form action="#">
-                                <select name="select" id="select1">
-                                    <option value="india">India</option>
-                                    <option value="usa">USA</option>
-                                    <option value="uae">UAE</option>
-                                    <option value="canada">CANADA</option>
-                                </select>
-                            </form>
-                            <ul class="header-ul">
-                                <li id="top-header-left-phone-li">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <a href="" id="contact">+91888888888</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcommerceWebsite</title>
+    <link rel="shortcut icon" href="images/flavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/letestProducts.css">
+    <script src="https://kit.fontawesome.com/bf33c26d23.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- top section -->
+    <header class="navbar">
+        <div class="header-top top-bg" id="navbar">
+            <div class="screen-span">
+                <div class="header-container">
+                    <div class="header-info-left">
+                        <img src="images/shopping_cart.png" alt="flag" height="40px" width="45px" id="flag">
+                        <form action="#">
+                            <select name="select" id="select1">
+                                <option value="india">India</option>
+                                <option value="usa">USA</option>
+                                <option value="uae">UAE</option>
+                                <option value="canada">CANADA</option>
+                            </select>
+                        </form>
+                        <ul class="header-ul">
+                            <li id="top-header-left-phone-li">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="" id="contact">+91888888888</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-info-right">
+                        <ul class="header-ul">
+                            <li><a href="">My Account</a></li>
+                            <li><a href="">Wish List</a></li>
+                            <li><a href="">Shopping</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header-bottom">
+            <div class="header-bottom-container">
+                <a href="/"><img src="images/my_logo_3.png" alt="logo"></a>
+                <div class="bottom-col">
+                    <div class="main-menu">
+                        <nav>
+                            <ul class="header-bottom-ul">
+                                <li><a href="">Home</a></li>
+                                <li>
+                                    <a href="">Latest</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Products</a></li>
+                                        <li><a href="">Launches</a></li>
+                                        <li><a href="">Sales</a></li>
+                                    </ul>
                                 </li>
-                            </ul>    
-                        </div>
-                        <div class="header-info-right">
-                            <ul class="header-ul">
-                                <li><a href="">My Account</a></li>
-                                <li><a href="">Wish List</a></li>
-                                <li><a href="">Shopping</a></li>
-                                <li><a href="">Cart</a></li>
-                                <li><a href="">Checkout</a></li>
+                                <li>
+                                    <a href="">Categories</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">Men</a></li>
+                                        <li><a href="">Women</a></li>
+                                        <li><a href="">Kids</a></li>
+                                        <li><a href="">Ethnic</a></li>
+                                        <li><a href="">Winter</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Contact</a></li>
                             </ul>
-                        </div>
+                        </nav>
                     </div>
                 </div>
+                <div class="bottom-col">
+                    <ul class="header-bottom-ul">
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                        <li><i class="fa-solid fa-heart"></i></li>
+                        <li><button class="btn" id="bottom-header-btn">Sign In</button></li>
+                    </ul>
+                </div>
             </div>
-            <div id="header-bottom">            
-                <div class="header-bottom-container">
-                    <a href="/"><img src="images/my_logo_3.png" alt="logo"></a>
-                    <div class="bottom-col">
-                        <div class="main-menu">
-                            <nav>
-                                <ul class="header-bottom-ul">
-                                    <li><a href="">Home</a></li>
-                                    <li>
-                                        <a href="">Latest</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="">Products</a></li>
-                                            <li><a href="">Launches</a></li>
-                                            <li><a href="">Sales</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="">Categories</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="">Men</a></li>
-                                            <li><a href="">Women</a></li>
-                                            <li><a href="">Kids</a></li>
-                                            <li><a href="">Ethnic</a></li>
-                                            <li><a href="">Winter</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">Blog</a></li>
-                                    <li><a href="">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="bottom-col">
-                        <ul class="header-bottom-ul">
-                            <li><i class="fa-solid fa-cart-shopping"></i></li>
-                            <li><i class="fa-solid fa-heart"></i></li>
-                            <li><button class="btn" id="bottom-header-btn">Sign In</button></li>
-                        </ul>
-                    </div>
-                </div>                
-            </div>
-        </header>
+        </div>
+    </header>
 
-        <!-- main content section -->
-        <main>
-            <div class="jumbotron-container">
-                <div class="jumbotron-left">
-                    <img src="images/mainimg.jpg" alt="jumbo image" height="472px" width="399px">
-                    <img src="images/ethnic2.jpg" alt="jumbo image" height="460px" width="307px">
-                    <img src="images/ethnic1.jpg" alt="jumbo image" height="513px" width="343px">
+    <!-- main content section -->
+    <main>
+        <div class="jumbotron-container">
+            <div class="jumbotron-left">
+                <img src="images/mainimg.jpg" alt="jumbo image" height="472px" width="399px">
+                <img src="images/ethnic2.jpg" alt="jumbo image" height="460px" width="307px">
+                <img src="images/ethnic1.jpg" alt="jumbo image" height="513px" width="343px">
+            </div>
+            <div class="jumbotron-right herocaption">
+                <span>60% Discount Going On</span>
+                <h1>Ethnic Collection</h1>
+                <p>Best collection ever for 2022 at the best of ethnics...!</p>
+                <button class="btn jumbotron-btn">Shop Now</button>
+            </div>
+        </div>
+
+        <!-- shop by category -->
+        <section class="shop-by-cat">
+            <h2 class="shop-by-cat-itm" id="shop-by-cat-heading">Shop by category</h2>
+            <div class="shop-by-cat-itm" id="cat-container-main">
+                <div class="cat-container-each">
+                    <img src="images/cat1.jpg" alt="cat1">
+                    <div class="cat-text">
+                        <h2 id="cat-headings-1" class="cat-heading">Women's</h2>
+                        <div id="cat-links1" class="cat-links">Best new deals</div>
+                    </div>
                 </div>
-                <div class="jumbotron-right herocaption">
-                    <span>60% Discount Going On</span>
-                    <h1>Ethnic Collection</h1>
-                    <p>Best collection ever for 2022 at the best of ethnics...!</p>
-                    <button class="btn jumbotron-btn">Shop Now</button>
+                <div class="cat-container-each">
+                    <img src="images/cat2.jpg" alt="cat2">
+                    <div class="cat-text">
+                        <h2 id="cat-headings-1" class="cat-heading">Ethnic wear</h2>
+                        <div id="cat-links-1" class="cat-links">Best new deals</div>
+                    </div>
+                </div>
+                <div class="cat-container-each">
+                    <img src="images/cat3.jpg" alt="cat3">
+                    <div class="cat-text">
+                        <h2 id="cat-headings-1" class="cat-heading">Men's</h2>
+                        <div id="cat-links-1" class="cat-links">Best new deals</div>
+                    </div>
                 </div>
             </div>
-
-            <!-- shop by category -->
-            <section class="shop-by-cat">
-                <h2 class="shop-by-cat-itm" id="shop-by-cat-heading">Shop by category</h2>
-                <div class="shop-by-cat-itm" id="cat-container-main">
-                    <div class="cat-container-each">
-                        <img src="images/cat1.jpg" alt="cat1">
-                        <div class="cat-text">
-                            <h2 id="cat-headings-1" class="cat-heading">Women's</h2>
-                            <div id="cat-links1" class="cat-links">Best new deals</div>
-                        </div>
+        </section>
+        <section id="product__section">
+            <div class="product__section__top">
+                <h2 id="product__header">Latest Products</h2>
+                <nav class="product__nav">
+                    <a class="product__nav__item active" href="#nav-home">All</a>
+                    <a class="product__nav__item" href="#nav-profile">New</a>
+                    <a class="product__nav__item" href="#nav-contact">Featured</a>
+                    <a class="product__nav__item" href="#nav-last">Offer</a>
+                </nav>
+            </div>
+            <!-- first navigation part -->
+            <div class="prod__container__each" id="nav-home">
+                <div class="products">
+                    <img src="images/product1.png" alt="product1">
+                    <span>New</span>
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
-                    <div class="cat-container-each">
-                        <img src="images/cat2.jpg" alt="cat2">
-                        <div class="cat-text">
-                            <h2 id="cat-headings-1" class="cat-heading">Ethnic wear</h2>
-                            <div id="cat-links-1" class="cat-links">Best new deals</div>
-                        </div>
-                    </div>
-                    <div class="cat-container-each">
-                        <img src="images/cat3.jpg" alt="cat3">
-                        <div class="cat-text">
-                            <h2 id="cat-headings-1" class="cat-heading">Men's</h2>
-                            <div id="cat-links-1" class="cat-links">Best new deals</div>
-                        </div>
-                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
                 </div>
-            </section>
-            <section id="product__section">
-                <div class="product__section__top">
-                    <h2 id="product__header">Latest Products</h2>
-                    <nav class="product__nav">
-                        <a class="product__nav__item active" href="#nav-home">All</a>
-                        <a class="product__nav__item" href="#nav-profile">New</a>
-                        <a class="product__nav__item" href="#nav-contact">Featured</a>
-                        <a class="product__nav__item" href="#nav-last">Offer</a>
-                    </nav>
+                <div class="products">
+                    <img src="images/product3.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
                 </div>
-                <!-- first navigation part -->
-                <div class="prod__container__each" id="nav-home">
-                    <div class="products">
-                        <img src="images/product1.png" alt="product1">
-                        <span>New</span>
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
+                <div class="products">
+                    <img src="images/product2.png" alt="product1">
+                    <span>New</span>
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
-                    <div class="products">
-                        <img src="images/product3.png" alt="product1">
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
-                    <div class="products">
-                        <img src="images/product2.png" alt="product1">
-                        <span>New</span>
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
-                    <div class="products">
-                        <img src="images/product4.png" alt="product1">
-                        <span>New</span>
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
-                    <div class="products">
-                        <img src="images/product5.png" alt="product1">
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
-                    <div class="products">
-                        <img src="images/product6.png" alt="product1">
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
                 </div>
-                <!-- this is the second nav part -->
-                <div class="prod__container__each" id="nav-profile">
-                    <div class="products">
-                        <img src="images/product1.png" alt="product1">
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
+                <div class="products">
+                    <img src="images/product4.png" alt="product1">
+                    <span>New</span>
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
                     </div>
-                    <div class="products">
-                        <img src="images/product2.png" alt="product1">
-                        <span>New</span>
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
-                    <div class="products">
-                        <img src="images/product4.png" alt="product1">
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
-                    <div class="products">
-                        <img src="images/product3.png" alt="product1">
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
-                    <div class="products">
-                        <img src="images/product6.png" alt="product1">
-                        <span>New</span>
-                        <div class="prod__star__container">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h4><a href="#">Green dress with details</a></h4>
-                        <ul>
-                            <li>$40.00</li>
-                            <li>$60.00</li>
-                        </ul>
-                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
                 </div>
-            </section>
-            <!-- shop by method area -->
+                <div class="products">
+                    <img src="images/product5.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product6.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product6.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product1.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product2.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product6.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product3.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product6.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product5.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product1.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+            </div>
+            <!-- this is the second nav part -->
+            <div class="prod__container__each" id="nav-profile">
+                <div class="products">
+                    <img src="images/product1.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product2.png" alt="product1">
+                    <span>New</span>
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product4.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product1.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product6.png" alt="product1">
+                    <span>New</span>
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product4.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product2.png" alt="product1">
+                    <span>New</span>
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product6.png" alt="product1">
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+                <div class="products">
+                    <img src="images/product2.png" alt="product1">
+                    <span>New</span>
+                    <div class="prod__star__container">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4><a href="#">Green dress with details</a></h4>
+                    <ul>
+                        <li>$40.00</li>
+                        <li>$60.00</li>
+                    </ul>
+                    <button class="prod__btn">Buy now</button>
+                </div>
+            </div>
+        </section>
+        <!-- shop by method area -->
+        <div>
             <div>
-                <div>
-                    <h6>Free shiping</h6>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla illo laboriosam ipsam e</p>
-                </div>
-                <div>
-                    <h6>Secured Payment</h6>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, sunt illum itaque unde ipsum
-                        quis.</p>
-                </div>
-                <div>
-                    <h6>Secure Website</h6>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A nihil nisi commodi, impedit hic omnis!
-                    </p>
-                </div>
+                <h6>Free shiping</h6>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla illo laboriosam ipsam e</p>
             </div>
-            <!-- shop by method area ending -->
-        </main>
+            <div>
+                <h6>Secured Payment</h6>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, sunt illum itaque unde ipsum
+                    quis.</p>
+            </div>
+            <div>
+                <h6>Secure Website</h6>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A nihil nisi commodi, impedit hic omnis!
+                </p>
+            </div>
+        </div>
+        <!-- shop by method area ending -->
+    </main>
 
-        <!-- footer section -->
-        <footer>
-            <p>Copyright &copy; All rights reserved</p>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-behance"></i></a>
-            <a href="#"><i class="fa-solid fa-globe"></i></a>
-        </footer>
-    </body>
-    <script src="js/index.js"></script>
+    <!-- footer section -->
+    <footer>
+        <p>Copyright &copy; All rights reserved</p>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-behance"></i></a>
+        <a href="#"><i class="fa-solid fa-globe"></i></a>
+    </footer>
+</body>
+<script src="js/index.js"></script>
+
 </html>
