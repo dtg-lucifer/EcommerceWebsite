@@ -12,6 +12,7 @@
     "vite": "^2.9.9"
   },
   "dependencies": {
+    "rollup": "^2.75.7",
     "sass": "^1.52.2"
   }
 }
