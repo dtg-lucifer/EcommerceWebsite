@@ -1,0 +1,20 @@
+.shop__by__method__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5rem;
+}
+.shop__by__method__container > .shop__by__method__each {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 35rem;
+  padding: 2rem;
+  border-radius: 1.3rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+.shop__by__method__container > .shop__by__method__each > h6 {
+  font-size: 20px;
+}
+.shop__by__method__container > .shop__by__method__each > p {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+}

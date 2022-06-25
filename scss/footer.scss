@@ -1,0 +1,23 @@
+footer#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    & > p {
+        font-size: 15px;
+        color: rgb(0 0 0 /  .4);
+    }
+    & > .footer__icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem;
+        & > a {
+            margin: 10px;
+            & > i {
+                font-size: 20px;
+                color: #f8880f;
+            }
+        }
+    }
+}
